@@ -45,3 +45,45 @@
 .link-active{
     text-decoration: underline;
 }
+
+
+@media screen and (max-width: 767px) {
+    #header {
+            padding-top: 5px;
+    }
+
+    .header {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header-logo {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+    }
+
+    .header-logo img {
+        height: 35px;
+    }
+
+    .header-logo span {
+        font-size: 60px;
+    }
+
+    .header-nav{
+        margin-top: 10px;
+    }
+
+
+    .header-nav-link {
+        font-size: 12px;
+        line-height: 17px;
+        margin-left: 15px;
+        text-transform: uppercase;
+    }
+}
