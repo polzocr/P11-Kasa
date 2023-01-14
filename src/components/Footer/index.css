@@ -1,4 +1,5 @@
 footer{
+    margin-top: 200px;
     height: 209px;
     width: 100%;
     padding-top: 50px;
@@ -19,6 +20,7 @@ footer{
 .footer-logo span {
     color: white;
     font-size: 45px;
+    font-weight: 500;
 }
 
 .footer-logo img {
