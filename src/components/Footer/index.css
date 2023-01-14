@@ -31,3 +31,15 @@ footer p {
     font-size: 24px;
 }
 
+@media screen and (max-width: 767px){
+    footer {
+            padding-top: 10px;
+            gap: 6px;
+        }
+    
+        
+    
+        footer p {
+            font-size: 12px;
+        }
+}
