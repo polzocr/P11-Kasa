@@ -1,6 +1,8 @@
+
+
 function Logement(){
     return (
-        <div>VOICI MA PAGE LOGEMENT</div>
+        <div>VOICI MA PAGE LOGEMENT: </div>
     )
 }
 
