@@ -1,6 +1,15 @@
+import logo from '../../assets/Vector-footer.svg'
+
 function Footer(){
     return(
-        <div>VOICI MON FOOTER PRESENT PARTOUT</div>
+        <footer style={{backgroundColor: "black"}}>
+            <div>
+                <span>K</span>
+                <img src={logo} alt="logo kasa"/>
+                <span>sa</span>
+            </div>
+            <p>© 2020 Kasa. All rights reserved</p>
+        </footer>
     )
 }
 

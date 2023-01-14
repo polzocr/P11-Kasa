@@ -1,6 +1,6 @@
 function Home(){
     return (
-        <div>VOICI MA PAGE DACCUEIL</div>
+        <main>VOICI MA PAGE DACCUEIL</main>
     )
 }
 
