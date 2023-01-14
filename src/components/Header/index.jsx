@@ -16,7 +16,8 @@ function Header() {
                 <div className="header-logo">
                     <span>K</span>
                     <img src={logo} alt='logo kasa' />
-                    <span>sa</span>
+                    <span>s</span>
+                    <span>a</span>
                 </div>
                 {/* <div className="header-logo">
                     <div><img src={k} alt='logo kasa'/></div>
