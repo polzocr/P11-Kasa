@@ -1,0 +1,47 @@
+#header{
+    padding-top: 30px;
+}
+
+.header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-logo{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.header-logo img{
+    
+    
+}
+
+.header-logo span {
+    color: #FF6060;
+    font-size: 90px;
+    
+}
+
+
+.header-nav-link{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #FF6060 ;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.header-nav-link{
+
+}
+
+.link-active{
+    text-decoration: underline;
+}

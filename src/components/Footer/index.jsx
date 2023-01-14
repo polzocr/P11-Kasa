@@ -1,4 +1,4 @@
-import logo from '../../assets/Vector-footer.svg'
+import logo from '../../assets/footer/Vector-footer.svg'
 
 function Footer(){
     return(
