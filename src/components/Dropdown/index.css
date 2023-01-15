@@ -28,11 +28,12 @@
 }
 
 .dropdown-title img{
-    
+   
 }
 
 .dropdown-content{
     padding: 20px 30px 20px 20px;
+    display: none;
 }
 
 .dropdown-content p {
@@ -41,6 +42,21 @@
    font-size: 24px;
    line-height: 34px;
 }
+/*
+///////////////////  CSS POUR LE DROPDOWN /////////////////
+*/
+.dropdown.active img{
+    transform: rotate(180deg);
+}
+
+.dropdown.active .dropdown-content{
+    display: block;
+}
+
+
+/*
+///////////////////////////////////////////////////////////
+*/
 
 @media screen and (max-width: 767px){
     .dropdown-title {
@@ -63,4 +79,5 @@
     .dropdown-content {
         padding: 20px 10px 40px 12px;
     }
+
 }
