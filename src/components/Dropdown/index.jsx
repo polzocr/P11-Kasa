@@ -15,8 +15,10 @@ function Dropdown({title, description }){
             </button>
             <div className='dropdown-content'>
                 {typeof (description) == 'object' ? (
-                    description.map((element) => {
-                        return <p>{element}</p>
+                    description.map((element, index) => {
+                        return <p key={`${element}-${index}`}>
+                                {element}
+                                </p>
                     })
                 ) : (
                     <p>{description}</p>

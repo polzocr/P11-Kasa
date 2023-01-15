@@ -13,8 +13,8 @@ function Routing(){
         <Routes>
             <Route path='/' element={<Layout />}>
                 <Route index element={<Home />}/>
-                <Route path='/about' element={<About />} />
-                <Route path='/logement/:id' element={<Logement />} />
+                <Route path='about' element={<About />} />
+                <Route path='logement/:id' element={<Logement />} />
             </Route>
             <Route path='*' element={<Error />} />
         </Routes>
