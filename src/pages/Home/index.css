@@ -1,0 +1,24 @@
+#cards {
+    background-color: #F6F6F6;
+    padding: 30px;
+    border-radius: 25px;
+    width: 88%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 340px;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 40px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px */
+}
+
+@media screen and (max-width: 767px){
+    #cards{
+        background-color: white;
+        padding: 0;
+        width: 100%;   
+        display: initial; 
+    }
+}
