@@ -5,24 +5,24 @@ import { useState } from 'react'
 
 function Carousel({children}){
     const [imgNumber, setImgNumber] = useState(0)
-    
+    const oneImageClass = !children || children.length <= 1 ? 'remove' : ''
 
     function nextImage(){
-        setImgNumber(imgNumber === children.length-1 ? 0 : imgNumber+1)
+        setImgNumber(imgNumber === children?.length-1 ? 0 : imgNumber+1)
     }
 
     function previousImage() {
-        setImgNumber(imgNumber === 0 ? children.length-1 : imgNumber -1)
+        setImgNumber(imgNumber === 0 ? children?.length-1 : imgNumber -1)
     }
 
     return(
         <div className="carousel">
             <div className='carousel-image'>
-                {children[imgNumber]}
+                {children && children[imgNumber]}
             </div>
-            <button className='carousel-arrow left' onClick={previousImage}></button>
-            <button className='carousel-arrow right' onClick={nextImage}></button>
-            <p className='carousel-number'>{imgNumber + 1}/{children.length}</p>
+            <button className={`carousel-arrow left ${oneImageClass}`} onClick={previousImage}></button>
+            <button className={`carousel-arrow right ${oneImageClass}`} onClick={nextImage}></button>
+            <p className='carousel-number'>{imgNumber + 1}/{children?.length}</p>
         </div>
     )
 }
