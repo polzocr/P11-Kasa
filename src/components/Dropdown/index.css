@@ -7,7 +7,7 @@
 .dropdown-title{
     background-color: #FF6060;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 47px;
     display: flex;
     align-items: center;
@@ -73,6 +73,7 @@
     .dropdown-title {
         height: 30px;
         padding: 2px 10px 2px 10px;
+        border-radius: 5px;
     }
 
     .dropdown-title h2 {
