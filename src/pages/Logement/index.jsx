@@ -1,7 +1,6 @@
 import { useParams, Navigate } from "react-router-dom"
 
 import dataLogements from '../../data/logements.json'
-
 import './index.css'
 
 import Dropdown from "../../components/Dropdown/index"
@@ -23,9 +22,7 @@ function Logement(){
 
                     </div>
                 </section>
-                <Info
-                    infosLogement={infosLogement}
-                />
+                <Info infosLogement={infosLogement}/>
                 <section id="dropdowns-logement">
                     <Dropdown
                         key={`description-${infosLogement.id}`}

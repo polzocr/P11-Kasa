@@ -1,7 +1,13 @@
 import Tag from '../Tag/index'
+import Star from '../Star'
+
 import './index.css'
 
 function Info({infosLogement}){
+
+    const tabRating = [1,1,1,1,1]
+    let rating = infosLogement.rating
+
     return (
         <section id="infos">
             <div className="infos-where">
@@ -18,7 +24,14 @@ function Info({infosLogement}){
             </div>
             <div className="infos-name">
                 <div className="infos-name-rating">
-                    <p>+++++</p>
+                    {tabRating.map((rate, index) => {
+                        rating--
+                        if(rating >= 0){
+                            return <Star color={true} key={`rating-${index}`}/>
+                        } else {
+                            return <Star color={false} key={`rating-${index}`} />
+                        }
+                    })}
                 </div>
                 <div className="infos-name-profil">
                     <p>{infosLogement.host.name}</p>

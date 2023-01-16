@@ -1,0 +1,12 @@
+
+
+.rating-star.colored{
+    filter: invert(51%) sepia(90%) saturate(2446%) hue-rotate(326deg) brightness(105%) contrast(107%);
+}
+
+
+@media screen and (max-width:767px){
+    .rating-star{
+        width: 15px;
+    }
+}

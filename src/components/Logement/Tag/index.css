@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.button-tag:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 767px){
     .button-tag {
         font-size: 10px;
