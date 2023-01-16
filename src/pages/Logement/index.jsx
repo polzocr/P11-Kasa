@@ -12,7 +12,7 @@ import Carousel from '../../components/Logement/Carousel'
 function Logement(){
     const { id } = useParams()
     const infosLogement = dataLogements.find((logement) => logement.id === id)
-    console.log(infosLogement)
+    
     if(infosLogement === undefined){
         return <Navigate to="*" replace={true} />
     }

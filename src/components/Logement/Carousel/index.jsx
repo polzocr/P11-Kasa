@@ -1,8 +1,11 @@
 import './index.css'
 import { useState } from 'react'
 
+
+
 function Carousel({children}){
     const [imgNumber, setImgNumber] = useState(0)
+    
 
     function nextImage(){
         setImgNumber(imgNumber === children.length-1 ? 0 : imgNumber+1)
@@ -11,6 +14,7 @@ function Carousel({children}){
     function previousImage() {
         setImgNumber(imgNumber === 0 ? children.length-1 : imgNumber -1)
     }
+
     return(
         <div className="carousel">
             <div className='carousel-image'>
@@ -24,3 +28,30 @@ function Carousel({children}){
 }
 
 export default Carousel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// window.addEventListener('keyup', function (e) {
+//     e.preventDefault()
+//     switch (e.key) {
+//         case 'ArrowRight':
+//             nextImage();
+//             break;
+//         case 'ArrowLeft':
+//             previousImage();
+//             break;
+//         default:
+//             break;
+//     }
+// })
