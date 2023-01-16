@@ -1,0 +1,120 @@
+#infos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*======================== TITLE =======================*/
+.infos-where {
+    max-width: 60%;
+}
+.infos-where h1{
+    word-break: break-word;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    color: #FF6060;
+}
+
+.infos-where p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #FF6060;
+}
+
+/*======================== PROFILE =======================*/
+
+.infos-name{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 30%;
+}
+
+.infos-name-profil {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.infos-name-profil p {
+    max-width: min-content;
+    text-align: end;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FF6060;
+}
+
+.infos-name-profil img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+
+/*=========== Container tags ==================*/
+
+.infos-where-tags{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    /* max-width: 40%; */
+}
+
+@media screen and (max-width: 767px){
+    .infos-where-tags {
+        gap: 10px;
+        max-width: 100%;
+    }
+}
+
+/*=========== Container tags ==================*/
+
+
+
+
+@media screen and (max-width: 767px){
+    #infos {
+        display: initial;
+    }
+
+    .infos-where{
+        max-width: 75%;
+    }
+    .infos-where h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .infos-where p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .infos-name {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .infos-name-profil {
+        gap: 10.5px;
+    }
+
+    .infos-name-profil p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .infos-name-profil img {
+        width: 32px;
+        height: 32px;
+    }
+}

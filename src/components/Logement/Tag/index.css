@@ -1,0 +1,26 @@
+/*  Container button-tag in Info/index.css  */
+
+.button-tag{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: white;
+    background-color: #FF6060;
+    border: none;
+    border-radius: 10px;
+    min-width: 115px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px){
+    .button-tag {
+        font-size: 10px;
+        line-height: 14px;
+        border-radius: 5px;
+        min-width: 84px;
+        height: 18px;
+    }
+}

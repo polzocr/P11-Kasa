@@ -1,0 +1,21 @@
+#logement{
+    width: 90%;
+    margin: auto;
+}
+
+#dropdowns-logement{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 76px;
+}
+
+@media screen and (max-width: 767px){
+    #logement{
+        width: 92%;
+    }
+
+    #dropdowns-logement {
+        display: initial;
+    }
+}

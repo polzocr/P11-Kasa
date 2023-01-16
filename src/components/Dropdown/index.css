@@ -1,7 +1,7 @@
 .dropdown{
     margin-top: 20px;
     border-radius: 5px;
-    background-color: #F6F6F6;
+    
 }
 
 .dropdown-title{
@@ -33,6 +33,7 @@
 
 .dropdown-content{
     padding: 20px 30px 20px 20px;
+    background-color: #F6F6F6;
     display: none;
 }
 
@@ -45,6 +46,7 @@
 /*
 ///////////////////  CSS POUR LE DROPDOWN /////////////////
 */
+
 .dropdown.active img{
     transform: rotate(180deg);
 }
@@ -52,6 +54,15 @@
 .dropdown.active .dropdown-content{
     display: block;
 }
+
+/* .dropdown.active{
+    background-color: #F6F6F6!important;
+} 
+.dropdown.active+.dropdown {
+    background-color: white;
+} */
+
+
 
 
 /*

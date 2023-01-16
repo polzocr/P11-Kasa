@@ -16,6 +16,7 @@ function Routing(){
                 <Route path='about' element={<About />} />
                 <Route path='logement/:id' element={<Logement />} />
             </Route>
+            {/* <Route path='/404' element={<Error/>} /> */}
             <Route path='*' element={<Error />} />
         </Routes>
     )
