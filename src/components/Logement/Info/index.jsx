@@ -35,7 +35,7 @@ function Info({infosLogement}){
                 </div>
                 <div className="infos-name-profil">
                     <p>{infosLogement.host.name}</p>
-                    <img src={infosLogement.host.picture} alt='image-propriétaire'></img>
+                    <img src={infosLogement.host.picture} alt='propriétaire'></img>
                 </div>
             </div>
         </section>

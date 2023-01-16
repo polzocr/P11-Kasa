@@ -23,7 +23,7 @@ function Logement(){
                 <section id="carousel">
                     <Carousel>
                         {infosLogement.pictures.map((picture,index) => {
-                            return <img src={picture} alt="image carousel" key={`image-${index}`}/>
+                            return <img src={picture} alt="carousel" key={`image-${index}`}/>
                         })}
                     </Carousel>
                 </section>
