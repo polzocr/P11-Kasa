@@ -18,7 +18,7 @@ function Carousel({children}){
             </div>
             <button className='carousel-arrow left' onClick={previousImage}></button>
             <button className='carousel-arrow right' onClick={nextImage}></button>
-            <div className='carousel-number'>{imgNumber + 1}/{children.length}</div>
+            <p className='carousel-number'>{imgNumber + 1}/{children.length}</p>
         </div>
     )
 }
