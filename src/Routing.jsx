@@ -8,17 +8,21 @@ import Layout from './pages/Layout/index'
 import Error from './components/Error/index'
 
 
+
 function Routing(){
     return (
-        <Routes>
-            <Route path='/' element={<Layout />}>
-                <Route index element={<Home />}/>
-                <Route path='about' element={<About />} />
-                <Route path='logement/:id' element={<Logement />} />
-            </Route>
-            {/* <Route path='/404' element={<Error/>} /> */}
-            <Route path='*' element={<Error />} />
-        </Routes>
+        <>
+            <Routes>
+                <Route path='/' element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='logement/:id' element={<Logement />} />
+                </Route>
+                <Route path='*' element={<Error />} />
+            </Routes>
+
+        </>
+        
     )
 }
 

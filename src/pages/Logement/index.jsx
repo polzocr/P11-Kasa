@@ -1,4 +1,4 @@
-import { useParams, Navigate } from "react-router-dom"
+import { useParams, Navigate, useLocation, useSearchParams, useLoaderData} from "react-router-dom"
 
 import dataLogements from '../../data/logements.json'
 import './index.css'
@@ -11,6 +11,7 @@ import Carousel from '../../components/Logement/Carousel'
 
 function Logement(){
     const { id } = useParams()
+    const dataLogements = useLoaderData()
     const infosLogement = dataLogements.find((logement) => logement.id === id)
     
     if(infosLogement === undefined){
