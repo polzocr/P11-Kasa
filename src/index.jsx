@@ -13,19 +13,20 @@ import Contact from './components/Contact/index'
 import Question from './components/Question/index'
 
 import Error from './components/Error/index'
+import ErrorPage from './components/Error/Error-page'
 
 import { LogementLoader, idLogementLoader } from './utils/api/index';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
-            <Route path='/' element={<Layout />}>
-                <Route index element={<Home />} loader={LogementLoader}/>
+            <Route path='/' element={<Layout />} errorElement={<ErrorPage />}>
+                <Route index element={<Home />} loader={LogementLoader} errorElement={<ErrorPage />} />
                 <Route path='about' element={<About />} >   
                     <Route path='questions' element={<Question/>}/>
                     <Route path='contact' element={<Contact/>}/>
                 </Route>
-                <Route path='logement/:id' element={<Logement />} loader={idLogementLoader}/>
+                <Route path='logement/:id' element={<Logement />} loader={idLogementLoader} errorElement={<ErrorPage />} />
             </Route>
             <Route path='*' element={<Error />} />
         </Route>
