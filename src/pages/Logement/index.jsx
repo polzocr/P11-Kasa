@@ -6,7 +6,6 @@ import './index.css'
 import Dropdown from "../../components/Dropdown/index"
 import Info from "../../components/Logement/Info"
 import Carousel from '../../components/Logement/Carousel'
-import { useEffect } from "react"
 
 
 
