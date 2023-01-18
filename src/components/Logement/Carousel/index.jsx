@@ -53,6 +53,8 @@ export default Carousel
 
 
 
+
+
 // window.addEventListener('keyup', function (e) {
 //     e.preventDefault()
 //     switch (e.key) {

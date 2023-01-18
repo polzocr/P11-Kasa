@@ -48,7 +48,3 @@ function Home(){
 
 export default Home
 
-export async function LogementLoader(){
-    const response = await fetch('http://localhost:4000/logements');
-    return response.json()
-}

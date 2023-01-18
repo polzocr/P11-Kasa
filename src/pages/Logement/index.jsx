@@ -1,6 +1,5 @@
-import { useParams, Navigate, useLocation, useSearchParams, useLoaderData} from "react-router-dom"
+import { Navigate, useLoaderData} from "react-router-dom"
 
-import dataLogements from '../../data/logements.json'
 import './index.css'
 
 import Dropdown from "../../components/Dropdown/index"
@@ -10,9 +9,7 @@ import Carousel from '../../components/Logement/Carousel'
 
 
 function Logement(){
-    const { id } = useParams()
-    const dataLogements = useLoaderData()
-    const infosLogement = dataLogements.find((logement) => logement.id === id)
+    const infosLogement = useLoaderData()
     
     if(infosLogement === undefined){
         return <Navigate to="*" replace={true} />
@@ -50,3 +47,5 @@ function Logement(){
 }
 
 export default Logement
+
+
