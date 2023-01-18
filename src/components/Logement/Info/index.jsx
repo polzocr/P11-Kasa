@@ -2,6 +2,7 @@ import Tag from '../Tag/index'
 import Star from '../Star'
 
 import './index.css'
+import React from 'react'
 
 function Info({infosLogement}){
 
@@ -9,7 +10,7 @@ function Info({infosLogement}){
     let rating = infosLogement.rating
 
     return (
-        <section id="infos">
+        <React.Fragment>
             <div className="infos-where">
                 <h1>{infosLogement.title}</h1>
                 <p>{infosLogement.location}</p>
@@ -38,7 +39,7 @@ function Info({infosLogement}){
                     <img src={infosLogement.host.picture} alt='propriétaire'></img>
                 </div>
             </div>
-        </section>
+        </React.Fragment>
     )
 }
 

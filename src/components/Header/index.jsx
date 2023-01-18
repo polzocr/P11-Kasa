@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import { useState } from "react"
 
 import logo from '../../assets/header/header-logo.svg'
@@ -8,7 +8,6 @@ import a from '../../assets/header/header-a.png'
 import './index.css'
 
 function Header() {
-    let currentUrl = window.location.pathname
     return (
         <section id="header">
             

@@ -6,6 +6,7 @@ import './index.css'
 import Dropdown from "../../components/Dropdown/index"
 import Info from "../../components/Logement/Info"
 import Carousel from '../../components/Logement/Carousel'
+import { useEffect } from "react"
 
 
 
@@ -16,6 +17,7 @@ function Logement(){
     if(infosLogement === undefined){
         return <Navigate to="*" replace={true} />
     }
+    
     return (
         <main>
             <section id="logement">
@@ -27,7 +29,9 @@ function Logement(){
                         })}
                     </Carousel>
                 </section>
-                <Info infosLogement={infosLogement}/>
+                <section id="infos">
+                    <Info infosLogement={infosLogement} />
+                </section>
                 <section id="dropdowns-logement">
                     <Dropdown
                         key={`description-${infosLogement.id}`}
