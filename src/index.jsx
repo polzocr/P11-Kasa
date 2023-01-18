@@ -20,7 +20,7 @@ import { LogementLoader, idLogementLoader } from './utils/api/index';
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
-            <Route path='/' element={<Layout />} errorElement={<ErrorPage />}>
+            <Route path='/' element={<Layout />} errorElement={<Error />}>
                 <Route index element={<Home />} loader={LogementLoader} errorElement={<ErrorPage />} />
                 <Route path='about' element={<About />} >   
                     <Route path='questions' element={<Question/>}/>
