@@ -1,0 +1,48 @@
+.error-page {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.error-page p:nth-child(1) {
+    margin-top: 50px;
+    font-weight: 700;
+    line-height: 410px;
+    font-size: 250px;
+    color: #FF6060;
+}
+
+.error-page p:nth-child(2) {
+    font-weight: 500;
+    line-height: 51px;
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.error-page-link {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 1023px) {
+    .error-page p:nth-child(1) {
+        margin-top: 90px;
+        line-height: 136px;
+        font-size: 100px;
+    }
+
+    .error-page p:nth-child(2) {
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    .error-page-link {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 80px;
+    }
+}

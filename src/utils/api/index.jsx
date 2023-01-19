@@ -10,7 +10,7 @@ export async function getLogements() {
 export async function getOneLogement(id) {
     const response = await fetch('http://localhost:4000/logements/' + id)
     if(!response.ok){
-        throw {message: "Ce logement n'existe pas !", status: 401}
+        throw {message: "Ce logement n'existe pas ou le connexion au serveur n'est pas possible", status: 401}
     }
     return response.json()
 }

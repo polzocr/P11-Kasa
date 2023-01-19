@@ -1,16 +1,14 @@
-import { Link } from "react-router-dom"
+import { useRouteError } from "react-router-dom";
 import './index.css'
 
-function Error(){
+function Error() {
+    const error = useRouteError()
     return (
-        <main>
-            <div className="error-page">
-                <p>404</p>
-                <p>Oups! la page que vous demandez n'existe pas.</p>
-                <Link to="/" className="error-page-link">Retourner sur la page d'accueil</Link>  
-            </div>
-        </main>
+        <section className="error-page">
+            <p>{error.status}</p>
+            <p><i>{error.statusText || error.message}</i></p>
+        </section>
     )
 }
 
-export  default Error
+export default Error
