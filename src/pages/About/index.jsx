@@ -21,8 +21,6 @@ function About(){
                     />
                 })}
             </section>
-            <Link to="/about/questions">Questions</Link>
-            <Link to="/about/contact">Contact</Link>
             <Outlet />
             
         </main>

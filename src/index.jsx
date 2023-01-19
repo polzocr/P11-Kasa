@@ -4,28 +4,21 @@ import './styles/index.css';
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route} from 'react-router-dom';
 
 
-import Home from './pages/Home/index'
+import Home, { LogementLoader } from './pages/Home/index'
 import About from './pages/About/index'
-import Logement from './pages/Logement/index'
+import Logement, {idLogementLoader} from './pages/Logement/index'
 import Layout from './pages/Layout/index'
-
-import Contact from './components/Contact/index'
-import Question from './components/Question/index'
 
 import Error from './components/Error/index'
 import ErrorPage from './components/Error/Error-page'
 
-import { LogementLoader, idLogementLoader } from './utils/api/index';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
             <Route path='/' element={<Layout />} errorElement={<Error />}>
                 <Route index element={<Home />} loader={LogementLoader} errorElement={<ErrorPage />} />
-                <Route path='about' element={<About />} >   
-                    <Route path='questions' element={<Question/>}/>
-                    <Route path='contact' element={<Contact/>}/>
-                </Route>
+                <Route path='about' element={<About />} />   
                 <Route path='logement/:id' element={<Logement />} loader={idLogementLoader} errorElement={<ErrorPage />} />
             </Route>
             <Route path='*' element={<Error />} />

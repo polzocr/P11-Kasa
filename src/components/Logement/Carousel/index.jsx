@@ -28,7 +28,7 @@ function Carousel({children}){
     return(
         <div className="carousel">
             <div className='carousel-image'>
-                {loading ? <div><div className='progress-6'></div><div className='charging'>{children}</div></div> : children && children[imgNumber]}
+                {loading ? <div><div className='progress-carousel'></div><div className='charging'>{children}</div></div> : children && children[imgNumber]}
                 {/* {children && children[imgNumber]} */}
             </div>
             <button className={`carousel-arrow left ${oneImageClass}`} onClick={previousImage}></button>

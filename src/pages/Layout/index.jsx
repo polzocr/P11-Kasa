@@ -6,7 +6,7 @@ function Layout(){
     return(
         <div>
             <Header />
-            <Outlet context={'baby'}/>
+            <Outlet />
             <Footer />
         </div>
     )

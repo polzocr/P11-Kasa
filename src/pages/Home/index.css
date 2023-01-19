@@ -41,7 +41,7 @@
     inset: 0 100% 0 0;
     border-radius: inherit;
     background: currentColor;
-    animation: p 2s infinite;
+    animation: p 1s infinite;
 }
 
 @keyframes p {

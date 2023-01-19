@@ -1,10 +1,9 @@
-import { Link, NavLink, useLocation } from "react-router-dom"
-import { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 import logo from '../../assets/header/header-logo.svg'
-import k from '../../assets/header/header-k.png'
-import s from '../../assets/header/header-s.png'
-import a from '../../assets/header/header-a.png'
+// import k from '../../assets/header/header-k.png'
+// import s from '../../assets/header/header-s.png'
+// import a from '../../assets/header/header-a.png'
 import './index.css'
 
 function Header() {

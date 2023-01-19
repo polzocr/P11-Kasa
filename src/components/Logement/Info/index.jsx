@@ -44,3 +44,4 @@ function Info({infosLogement}){
 }
 
 export default Info
+
