@@ -17,7 +17,6 @@ function Home(){
     //     }
     //     fetchData()
     // }, [])
-    console.log(data)
     return (
         <main>
             <Banner title="Chez vous, partout et ailleurs" imageAccueil={imageAccueil}/>
