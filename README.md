@@ -21,7 +21,7 @@ On Windows, these installations require to use PowerShell in administrator mode.
 
 ## Usage
 
-### 1. Frontend 
+### 1. Local Frontend 
 
 - Run `npm run dev` to lauch the server 
 - Go to the adress in your browser (depends on which port)
@@ -29,6 +29,9 @@ On Windows, these installations require to use PowerShell in administrator mode.
 
 Use `Ctrl+C` in the terminal to stop the local server.
 
+### 2. Build version (vercel)
+
+- go to https://p11-kasa-indol.vercel.app/ to see the build version of the application
 
 ## Authors
 
